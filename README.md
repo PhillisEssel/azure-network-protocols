@@ -25,10 +25,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Resouces (Linex/Windows)
+- Download/Filter Wireshark
+- Initiating Perpetual Ping/Non-stop
+- Observing SSH/DHCP/DNS/RDP Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -36,7 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using the resouce group and allow the VM to create a new Virtual Network(Vnet) and Subnet. Next create another VM on Linex using the same resouce group and Vnet. Then observe the Virtual Network within Network Watcher.
 </p>
 <br />
 
