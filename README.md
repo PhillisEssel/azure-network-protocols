@@ -36,7 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using the resouce group and allow the VM to create a new Virtual Network(Vnet) and Subnet. Next create another VM on Linex using the same resouce group and Vnet. Then observe the Virtual Network within Network Watcher. Now open Remote Desktop to connect to Windows 10 VM, then install Wireshark and filter ICMP traffic. Use the Private IP address of the Linex VM and ping to it from Windows VM (should see request/reply traffic from both machines).
+Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using the resouce group and allow the VM to create a new Virtual Network(Vnet) and Subnet. Next create another VM on Linex using the same resouce group and Vnet. Then observe the Virtual Network within Network Watcher. Now open Remote Desktop to connect to Windows 10 VM, then install Wireshark and filter ICMP traffic. Use the Private IP address of the Linex VM and ping to it from Windows VM (should see request/reply traffic from both machines). Next in Windows VM, opem command line or Powershell and ping a public website(www.google.com) and observe traffic in Wireshark. 
 </p>
 <br />
 
@@ -44,7 +44,7 @@ Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using t
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next in Windows VM, opem command line or Powershell and ping a public website(www.google.com) and observe traffic in Wireshark. Then after initiate perpetual/non-stop ping from Windows VM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then after initiate perpetual/non-stop ping from Windows VM to Linex VM. Go to Network Security Group on Azure of Linex VM and disable incoming (in bound) ICMP traffic and observe the traffic in Wireshrk from Windows. Re-enable ICMP traffic in NSG and then observe the traffic in Wireshark again. Next observe ssh traffic by using Windows Powershell to input Linex private IP address. Type commands into linex SSH connection and observe the traffic then type "exit" in Powershell when done. 
 </p>
 <br />
 
@@ -52,6 +52,6 @@ Next in Windows VM, opem command line or Powershell and ping a public website(ww
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next filter for DHCP traffic in Wireshark. In Windows VM issue the VM a new IP address (ipconfig/renew) and observe the traffic in Wireshark. To observe DNS traffic Wireshark use Windows VM and type nsloopup in Powershell for any public website (disney.com). To observe RDP traffic in Wireshark filter for RDP and it will be non-stop due to you being currently active on a desktop.
 </p>
 <br />
