@@ -44,7 +44,7 @@ Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using t
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then after initiate perpetual/non-stop ping from Windows VM to Linex VM. Go to Network Security Group on Azure of Linex VM and disable incoming (in bound) ICMP traffic and observe the traffic in Wireshrk from Windows. Re-enable ICMP traffic in NSG and then observe the traffic in Wireshark again. Next observe ssh traffic by using Windows Powershell to input Linex private IP address. Type commands into linex SSH connection and observe the traffic then type "exit" in Powershell when done. 
+Then after clear your data and initiate perpetual/non-stop ping from Windows VM to Linex VM. Go to Network Security Group on Azure of Linex VM and disable incoming (in bound) ICMP traffic and observe the traffic in Wireshrk from Windows. Re-enable ICMP traffic in NSG and then observe the traffic in Wireshark again. Next observe ssh traffic by using Windows Powershell to input Linex private IP address. Type commands into linex SSH connection and observe the traffic then type "exit" in Powershell when done. 
 </p>
 <br />
 
@@ -52,6 +52,6 @@ Then after initiate perpetual/non-stop ping from Windows VM to Linex VM. Go to N
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next filter for DHCP traffic in Wireshark. In Windows VM issue the VM a new IP address (ipconfig/renew) and observe the traffic in Wireshark. To observe DNS traffic Wireshark use Windows VM and type nsloopup in Powershell for any public website (disney.com). To observe RDP traffic in Wireshark filter for RDP and it will be non-stop due to you being currently active on a desktop.
+Next clear your data and filter for DHCP traffic in Wireshark. In Windows VM issue a new IP address (ipconfig/renew) in Powershell and observe the traffic in Wireshark. Once again clear your data to observe DNS traffic on Wireshark and use Windows VM to type nsloopup in Powershell for any public website (disney.com). To observe RDP traffic in Wireshark filter for RDP and it will be non-stop due to you being currently active on the desktop.
 </p>
 <br />
