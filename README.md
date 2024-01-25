@@ -50,7 +50,7 @@ Open Azure and create a Resouce Group. Then Create a VM on Windows 10/11 using t
   
 ![Azure Compute and Network Protocols Phase 2 - Imgur](https://github.com/PhillisEssel/azure-network-protocols/assets/156061642/552356c2-74bb-489a-a4c7-3d7d4f55263c)
 
-<p><a href="https://imgur.com/a/Q5jTQzW">More</a></p>
+<p><a href="https://imgur.com/a/JE2Bu3h">More</a></p>
   
 </p>
 <p>
@@ -63,7 +63,7 @@ Then after clear your data and initiate perpetual/non-stop ping from Windows VM 
   
 ![Azure Compute and Network Protocols Phase 3 - Imgur](https://github.com/PhillisEssel/azure-network-protocols/assets/156061642/9ba9f543-5e3b-41a0-8bf4-c3f5ca961b9b)
 
-<p><a href="https://imgur.com/a/MeTaVF4">More</a></p>
+<p><a href="https://imgur.com/a/Q5jTQzW">More</a></p>
   
 </p>
 <p>
